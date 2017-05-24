@@ -1,4 +1,3 @@
-# Circus
-Contains wrapper classes for various libraries used in android development
+# Circus/Mosby3
 
-Various wrappers are actually separated into branches so that I wouldn't unnecessarily pull everything.
+A gradle/kotlin ready implementation of Mosby3 MVP. Read more about it on its github (page)[https://github.com/sockeqwe/mosby].
