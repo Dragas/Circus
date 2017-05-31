@@ -1,0 +1,25 @@
+<manifest
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    package = "lt.dragas.apps.scheduler"
+    >
+
+    <application
+        android:allowBackup = "true"
+        android:label = "@string/app_name"
+        android:supportsRtl = "true"
+        >
+
+        <receiver
+            android:name = "lt.dragas.apps.scheduler.CircusScheduler"
+            android:exported = "false"
+            >
+            <intent-filter>
+                <action android:name = "lt.dragas.apps.scheduler.CircusScheduler.SCHEDULE_TASK"/>
+                <action android:name = "lt.dragas.apps.scheduler.CircusScheduler.CANCEL_TASK"/>
+                <action android:name = "lt.dragas.apps.scheduler.CircusScheduler.RESTART_TASK"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
